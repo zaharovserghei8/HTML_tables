@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sarcina 5 — Tabel mare sticky</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .table-wrapper { height: 360px; overflow:auto; border:1px solid #dee2e6; }
+    .table-sticky thead th { position: sticky; top: 0; background: #fff; z-index: 5; }
+    .table-sticky tbody tr:nth-child(even){ background:#f8f9fa; }
+    .out { opacity: .45; }
+  </style>
+</head>
+<body class="p-4">
+  <div class="container">
+    <h1 class="mb-3">Tabel mare — Sarcina 5</h1>
+
+    <div class="table-wrapper">
+      <table class="table table-bordered table-sticky mb-0">
+        <caption class="fw-semibold">Lista extinsă (>30 rânduri)</caption>
+        <thead class="table-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produs</th>
+            <th scope="col">Categorie</th>
+            <th scope="col">Cant.</th>
+            <th scope="col">Preț</th>
+            <th scope="col">Disponibil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">1</th><td>Prod 1</td><td>Cat A</td><td>5</td><td>10.00</td><td>Da</td></tr>
+          <tr><th scope="row">2</th><td>Prod 2</td><td>Cat A</td><td>3</td><td>12.00</td><td>Da</td></tr>
+          <tr><th scope="row">3</th><td>Prod 3</td><td>Cat B</td><td>7</td><td>8.50</td><td>Da</td></tr>
+          <tr class="out"><th scope="row">4</th><td>Prod 4</td><td>Cat B</td><td>0</td><td>15.00</td><td>Stoc epuizat</td></tr>
+          <tr><th scope="row">5</th><td>Prod 5</td><td>Cat C</td><td>21</td><td>5.00</td><td>Da</td></tr>
+          <tr><th scope="row">6</th><td>Prod 6</td><td>Cat C</td><td>11</td><td>45.00</td><td>Da</td></tr>
+          <tr><th scope="row">7</th><td>Prod 7</td><td>Cat A</td><td>2</td><td>99.00</td><td>Da</td></tr>
+          <tr><th scope="row">8</th><td>Prod 8</td><td>Cat D</td><td>6</td><td>22.00</td><td>Da</td></tr>
+          <tr><th scope="row">9</th><td>Prod 9</td><td>Cat D</td><td>9</td><td>7.00</td><td>Da</td></tr>
+          <tr><th scope="row">10</th><td>Prod 10</td><td>Cat E</td><td>4</td><td>13.00</td><td>Da</td></tr>
+          <tr><th scope="row">11</th><td>Prod 11</td><td>Cat E</td><td>14</td><td>3.50</td><td>Da</td></tr>
+          <tr><th scope="row">12</th><td>Prod 12</td><td>Cat F</td><td>8</td><td>66.00</td><td>Da</td></tr>
+          <tr class="out"><th scope="row">13</th><td>Prod 13</td><td>Cat F</td><td>1</td><td>120.00</td><td>Stoc epuizat</td></tr>
+          <tr><th scope="row">14</th><td>Prod 14</td><td>Cat G</td><td>18</td><td>6.60</td><td>Da</td></tr>
+          <tr><th scope="row">15</th><td>Prod 15</td><td>Cat H</td><td>7</td><td>9.99</td><td>Da</td></tr>
+          <tr><th scope="row">16</th><td>Prod 16</td><td>Cat H</td><td>10</td><td>29.00</td><td>Da</td></tr>
+          <tr class="out"><th scope="row">17</th><td>Prod 17</td><td>Cat I</td><td>0</td><td>199.00</td><td>Stoc epuizat</td></tr>
+          <tr><th scope="row">18</th><td>Prod 18</td><td>Cat I</td><td>3</td><td>49.99</td><td>Da</td></tr>
+          <tr><th scope="row">19</th><td>Prod 19</td><td>Cat J</td><td>2</td><td>75.00</td><td>Da</td></tr>
+          <tr><th scope="row">20</th><td>Prod 20</td><td>Cat J</td><td>13</td><td>5.50</td><td>Da</td></tr>
+          <tr><th scope="row">21</th><td>Prod 21</td><td>Cat K</td><td>22</td><td>8.20</td><td>Da</td></tr>
+          <tr><th scope="row">22</th><td>Prod 22</td><td>Cat K</td><td>17</td><td>11.00</td><td>Da</td></tr>
+          <tr><th scope="row">23</th><td>Prod 23</td><td>Cat L</td><td>6</td><td>14.50</td><td>Da</td></tr>
+          <tr><th scope="row">24</th><td>Prod 24</td><td>Cat L</td><td>9</td><td>20.00</td><td>Da</td></tr>
+          <tr><th scope="row">25</th><td>Prod 25</td><td>Cat M</td><td>5</td><td>30.00</td><td>Da</td></tr>
+          <tr><th scope="row">26</th><td>Prod 26</td><td>Cat M</td><td>1</td><td>250.00</td><td>Da</td></tr>
+          <tr><th scope="row">27</th><td>Prod 27</td><td>Cat N</td><td>12</td><td>2.50</td><td>Da</td></tr>
+          <tr><th scope="row">28</th><td>Prod 28</td><td>Cat N</td><td>19</td><td>4.00</td><td>Da</td></tr>
+          <tr><th scope="row">29</th><td>Prod 29</td><td>Cat O</td><td>7</td><td>16.00</td><td>Da</td></tr>
+          <tr><th scope="row">30</th><td>Prod 30</td><td>Cat O</td><td>2</td><td>6.75</td><td>Da</td></tr>
+          <tr><th scope="row">31</th><td>Prod 31</td><td>Cat P</td><td>8</td><td>13.50</td><td>Da</td></tr>
+          <tr class="out"><th scope="row">32</th><td>Prod 32</td><td>Cat Q</td><td>0</td><td>199.99</td><td>Stoc epuizat</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
